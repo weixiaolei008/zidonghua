@@ -1,0 +1,383 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	font-size: 14px;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+.crumbs {
+	padding: 0;
+	display: inline-block;
+	line-height: 20px;
+}
+
+.el-icon-info {
+	margin-right: 10px;
+}
+
+.el-menu-item-group .el-menu-item-group__title {
+	padding: 0px !important;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* custom */
+
+a {
+	color: #7e8c8d;
+	text-decoration: none;
+	-webkit-backface-visibility: hidden;
+}
+
+li {
+	list-style: none;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 5px;
+	background-color: rgba(125, 125, 125, 0.7);
+	-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 5px;
+	background-color: rgba(125, 125, 125, 0.7);
+	-webkit-border-radius: 6px;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body,
+#app {
+	height: 100%;
+}
+
+
+/* IE7 */
+
+input:focus,
+a:focus,
+button:focus,
+textarea:focus {
+	outline: none
+}
+
+::-ms-clear {
+	display: none;
+}
+
+::-ms-reveal {
+	display: none;
+}
+
+.on-focus:focus {
+	border: 1px solid #5BC0DE;
+}
+
+
+/*表头td*/
+.el-table__row {
+	/*height: 45px;*/
+}
+.el-button--mini, .el-button--mini.is-round{
+  padding: 5px 5px;
+}
+
+.el-table{
+  border-bottom: 1px solid #eee;
+}
+.el-table .has-gutter th .cell{
+  color: #000;
+  font-family: 微软雅黑;
+  font-weight: 900;
+  text-align: center;
+}
+.el-table .el-table__header-wrapper .el-table__header .has-gutter tr .gutter{
+  display: block!important;
+}
+.el-table .el-table__body td {
+	padding: 4px 0;
+}
+/*结束*/
+
+.el-select__tags {
+	max-width: 480px !important;
+}
+
+.dealerChoice .el-form-item__content {
+	max-height: 90px;
+	overflow-y: auto;
+	border: 1px solid #dcdfe6;
+	border-radius: 4px;
+	overflow-x: hidden;
+}
+
+.dealerChoice .el-input__inner {
+	border: none;
+}
+
+.el-message-box__btns button:first-of-type {
+	border: 1px solid #F4516B;
+	border-radius: 15px;
+	width: 84px;
+	height: 37px;
+}
+
+.el-message-box__btns button:first-of-type:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.el-message-box__btns button:last-of-type {
+	background: #E05D6F;
+	border-radius: 15px;
+	width: 84px;
+	height: 37px;
+	border: none;
+}
+
+.el-message-box__btns {
+	padding-top: 20px;
+}
+
+.el-message-box {
+	min-width: 300px;
+	width: auto;
+}
+
+.el-table::before {
+	height: 0;
+}
+
+
+/*head按钮公共样式*/
+.icon-add,.icon-setting {
+	background: #418BCA;
+}
+
+
+.icon-edit {
+	background: #5CB85C;
+}
+
+.icon-search,.icon-delete{
+	background: #F4516B;
+}
+
+
+.icon-permission{
+	background: #945CCB;
+}
+
+.icon-password{
+	background: #327AB7;
+}
+
+.icon-receipt{
+	background: #418bca;
+}
+/*导航栏箭头颜色*/
+.el-submenu__title i{
+	color: #fff;
+}
+
+
+/*清除浮动*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+* html.clearfix {
+    zoom: 1;
+}
+
+/* IE6 */
+* + html.clearfix {
+    zoom: 1;
+}
+
+.el-progress-bar__outer{
+	border-radius: 3px !important;
+}
+.el-progress-bar__outer .el-progress-bar__inner{
+	text-align: left;
+	border-radius: 3px !important;
+}
+.rate-success .el-progress-bar__outer{
+	background-color: #b1dcb1;
+	width: 170px;
+}
+.rate-like .el-progress-bar__outer{
+	background-color: #a0b9f3;
+}
+
+.el-table .cell, .el-table th div, .el-table--border td:first-child .cell, .el-table--border th:first-child .cell {
+    padding-left: 2px;
+}
+.el-table .cell, .el-table th div {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.el-table .caret-wrapper {
+	width: 1px;
+}
+
+.el-upload-dragger{
+	width: 437px;
+	height: 80px;
+}
+.el-upload-dragger .el-icon-upload {
+    margin: 2px 0 1px;
+}
+.el-upload-dragger .el-upload__text{
+	line-height: 0px;
+}
